@@ -78,7 +78,7 @@ private handleError<T> (operation = 'operation', result?: T) {
     this.log(`${operation} failed: ${error.message}`);
 
 
-    
+    console.log("Richard");
  
     // Let the app keep running by returning an empty result.
     return of(result as T);
