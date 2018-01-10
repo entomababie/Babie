@@ -77,8 +77,9 @@ private handleError<T> (operation = 'operation', result?: T) {
     // TODO: better job of transforming error for user consumption
     this.log(`${operation} failed: ${error.message}`);
 
-
-    
+    /**
+     * Git development branch
+     */
  
     // Let the app keep running by returning an empty result.
     return of(result as T);
